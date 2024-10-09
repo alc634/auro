@@ -1,0 +1,27 @@
+controller Controller {
+	uses SensorsI requires MovementI stm StateMachine {
+		uses SensorsI requires MovementI initial i0
+		state Moving {
+			entry move ( 10 , 0 )
+		}
+		state Turning {
+		}
+		transition t0 {
+			from i0
+			to Moving
+		}
+		transition t1 {
+			from Moving
+			to Turning
+			trigger obstacle
+		}
+		transition t2 {
+			from Turning
+			to Moving
+			condition sinceEntry ( Turning ) >= 180 / 30
+		}
+	}
+
+	connection Controller on obstacle to StateMachine on obstacle
+}
+

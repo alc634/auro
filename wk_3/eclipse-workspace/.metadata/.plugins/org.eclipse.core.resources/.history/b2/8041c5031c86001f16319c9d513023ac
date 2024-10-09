@@ -1,0 +1,3 @@
+controller Controller {
+	uses SensorsI requires MovementI }
+

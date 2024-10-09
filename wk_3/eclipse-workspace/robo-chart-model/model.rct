@@ -1,0 +1,11 @@
+interface MovementI {
+	move ( lv : real , av : real )
+}
+
+interface SensorsI {
+	event obstacle
+}
+
+robotic platform Platform {
+	uses SensorsI provides MovementI }
+

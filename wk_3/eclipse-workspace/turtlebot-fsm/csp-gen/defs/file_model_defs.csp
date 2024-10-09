@@ -1,0 +1,30 @@
+
+--
+-- RoboChart generator version 3.0.0.202408051513
+-- Automatically generated on 09-10-2024 10:45:30
+--
+-- Iterated compression status: true
+-- Assertions compression status: false
+--
+
+-- data definitions used by platform:/resource/turtlebot-fsm/model.rct
+nametype Vector3 = (core_real,core_real,core_real)
+Vector3_x((x,y,z)) = x
+update_Vector3_x((x,y,z),v__) = (v__,y,z)
+Vector3_y((x,y,z)) = y
+update_Vector3_y((x,y,z),v__) = (x,v__,z)
+Vector3_z((x,y,z)) = z
+update_Vector3_z((x,y,z),v__) = (x,y,v__)
+nametype Twist = (Vector3,Vector3)
+Twist_linear((linear,angular)) = linear
+update_Twist_linear((linear,angular),v__) = (v__,angular)
+Twist_angular((linear,angular)) = angular
+update_Twist_angular((linear,angular),v__) = (linear,v__)
+datatype Direction = Direction_Left | Direction_Right
+Direction_is(Direction_Left,Direction_Left) = true
+Direction_is(_,Direction_Left) = false
+Direction_is(Direction_Right,Direction_Right) = true
+Direction_is(_,Direction_Right) = false
+
+
+	

@@ -1,0 +1,6 @@
+module Main {
+	connection rp_ref0 on obstacle to ctrl_ref0 on obstacle ( _async )
+	rref rp_ref0 = Platform
+	cref ctrl_ref0 = Controller
+}
+

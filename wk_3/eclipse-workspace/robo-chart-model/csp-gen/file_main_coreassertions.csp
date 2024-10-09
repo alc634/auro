@@ -1,0 +1,44 @@
+
+--
+-- RoboChart generator version 3.0.0.202408051513
+-- Automatically generated on 09-10-2024 09:56:21
+--
+-- Iterated compression status: true
+-- Assertions compression status: false
+--
+
+include "file_main.csp"
+
+
+
+
+-- generate Main
+P_Main = let
+	id__ = 0
+	
+	
+	
+		
+	
+within
+	Main::O__(id__)
+assert P_Main :[deadlock-free]	
+assert P_Main;RUN({r__}) :[deadlock-free]
+assert P_Main :[deterministic]
+assert P_Main :[divergence-free]
+
+-- generate Main_ctrl_ref0
+P_Main_ctrl_ref0 = let
+	id__ = 0
+	
+	
+	
+		
+within
+	Main::ctrl_ref0::O__(id__)
+
+assert P_Main_ctrl_ref0 :[deadlock-free]	
+assert P_Main_ctrl_ref0;RUN({r__}) :[deadlock-free]
+assert P_Main_ctrl_ref0 :[deterministic]
+assert P_Main_ctrl_ref0 :[divergence-free]
+

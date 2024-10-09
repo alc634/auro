@@ -1,0 +1,8 @@
+controller Controller {
+	uses SensorsI requires MovementI stm StateMachine {
+		uses SensorsI requires MovementI }
+
+	connection Controller on sendMessage to StateMachine on sendMessage
+	connection Controller on receiveMessage to StateMachine on receiveMessage
+}
+
