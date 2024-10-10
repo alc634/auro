@@ -2,7 +2,7 @@
 
 To run VM on Linux departmental machines, the command below runs a bash script that fetches and configures the VM:
 
-`/shared/storage/cs/www/robostar/auro/auro.sh`
+`/shared/storage/compsci/vm-images/auro/auro.sh`
 
 Check the ROS environment setup in the VM using the command:
 
